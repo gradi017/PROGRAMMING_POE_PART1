@@ -28,19 +28,19 @@ public class PART1_POE {
         
     String result = Register.registerUser(firstName, username, password, cellphone, lastName);
     
-    System.out.println("******************************");
+    System.out.println("*****************************************");
     System.out.println(result);
-    System.out.println("******************************");
+    System.out.println("******************************************");
     
     if(result.contains("not correctly")){
     System.out.println("Please fix your errors and try again.");
     return; 
     }
    
-    System.out.print("Enter username to login: ");
+    System.out.print("Enter username to Login: ");
     String loginUsername = scan.next();
     
-    System.out.print("Enter password to login: ");
+    System.out.print("Enter password to Login: ");
     String loginPassword = scan.next();
     
     
