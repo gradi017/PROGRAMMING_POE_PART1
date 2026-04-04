@@ -51,15 +51,15 @@ public class Register {
         String errors = "";
         
         if(!checkUserName(username)){
-            errors += "username is not correctly formatted;\n";
+            errors += "Username is not correctly formatted;\n";
         }
         
         if(!checkPasswordComplexity(password)){
-            errors += "password is not correctly formatted;\n";
+            errors += "Password is not correctly formatted;\n";
         }
         
         if(!checkCellPhoneNumber(cellphone)){
-            errors += "cellphone is not correctly formatted;\n";
+            errors += "Cellphone is not correctly formatted;\n";
         }
         
         if(!errors.isEmpty()){
