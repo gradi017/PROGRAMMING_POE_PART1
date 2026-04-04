@@ -10,7 +10,7 @@ import org.junit.Assert;
 
 public class RegisterTest {
     
-    // ✅ USERNAME TESTS
+    //  USERNAME TESTS
     @Test
     public void testCheckUserNameCorrect() {
         Assert.assertEquals(true, Register.checkUserName("kyl_1"));
@@ -18,10 +18,10 @@ public class RegisterTest {
     
     @Test
     public void testCheckUserNameIncorrect() {
-        Assert.assertEquals(false, Register.checkUserName("kyle!!!"));
+        Assert.assertEquals(false, Register.checkUserName("kyle!!!!!"));
     }
     
-    // ✅ PASSWORD TESTS
+    //  PASSWORD TESTS
     @Test
     public void testCheckPasswordComplexityCorrect() {
         Assert.assertEquals(true, Register.checkPasswordComplexity("Kibesi22@@"));
@@ -32,7 +32,7 @@ public class RegisterTest {
         Assert.assertEquals(false, Register.checkPasswordComplexity("password"));
     }
     
-    // ✅ CELLPHONE TESTS
+    // CELLPHONE TESTS
     @Test
     public void testCheckCellPhoneNumberCorrect() {
         Assert.assertEquals(true, Register.checkCellPhoneNumber("+27606076767"));
@@ -50,7 +50,7 @@ public class RegisterTest {
         Assert.assertEquals(true, result.contains("Welcome"));
     }
     
-    // ✅ LOGIN TESTS
+    // LOGIN TESTS
     @Test
     public void testLoginUserCorrect() {
         Register.registerUser("John", "kyl_1", "Kibesi22@@", "+27606076767", "Doe");
@@ -62,7 +62,7 @@ public class RegisterTest {
         Assert.assertEquals(false, Register.loginUser("wrong", "wrong"));
     }
     
-    // ✅ LOGIN STATUS TESTS
+    //  LOGIN STATUS TESTS
     @Test
     public void testReturnLoginStatusSuccess() {
         Assert.assertEquals(true, Register.returnLoginStatus(true).contains("Welcome back"));
