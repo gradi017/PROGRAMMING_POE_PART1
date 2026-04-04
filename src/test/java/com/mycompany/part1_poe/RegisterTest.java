@@ -65,7 +65,7 @@ public class RegisterTest {
     //  LOGIN STATUS TESTS
     @Test
     public void testReturnLoginStatusSuccess() {
-        Assert.assertEquals(true, Register.returnLoginStatus(true).contains("Welcome back"));
+        Assert.assertEquals(true, Register.returnLoginStatus(true).contains("Welcome Back"));
     }
     
     @Test
