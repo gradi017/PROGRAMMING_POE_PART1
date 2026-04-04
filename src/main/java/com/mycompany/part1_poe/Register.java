@@ -82,7 +82,7 @@ public class Register {
     }
     
     static boolean loginUser(String username, String password){
-        // Supprimer les System.out.println() dans les méthodes de test
+        
         if(username.equals(registeredUser.username) && 
            password.equals(registeredUser.password)){
             return true;
@@ -93,12 +93,12 @@ public class Register {
     
     static String returnLoginStatus(boolean isLoggedIn) {
         if(isLoggedIn) {
-            // Vérifier que firstName et lastName ne sont pas null
+            
             String firstName = registeredUser.firstName != null ? registeredUser.firstName : "";
             String lastName = registeredUser.lastName != null ? registeredUser.lastName : "";
-            return "Welcome back " + firstName + " " + lastName;
+            return "Welcome Back " + firstName + " " + lastName;
         } else {
-            return "loggin has failed";
+            return "Loggin has failed";
         }
     }
     
